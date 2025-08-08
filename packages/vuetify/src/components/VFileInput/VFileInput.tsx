@@ -72,10 +72,6 @@ export const makeVFileInputProps = propsFactory(
       default: 22,
     },
     dragBorderColor: String,
-    dragBackgroundOpacity: {
-      type: Number,
-      default: 0,
-    },
 
     ...makeVInputProps({ prependIcon: "$file" }),
 
@@ -291,11 +287,6 @@ export const VFileInput = genericComponent<VFileInputSlots>()({
             ]}
             style={[
               props.style,
-              /*{
-                "--v-file-input-drag-border-color": props.dragBorderColor,
-                "--v-file-input-drag-background-opacity":
-                  props.dragBackgroundOpacity,
-              },*/
               isDragging.value && outlineStyles.value
             ]}
             onClick:prepend={onClickPrepend}
