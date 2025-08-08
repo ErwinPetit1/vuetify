@@ -39,10 +39,6 @@
     &--dragging input[type="file"]
       z-index: 1
     
-    &--dragging
-      outline: 1px dashed var(--v-file-input-drag-border-color)
-      background-color: rgba(from var(--v-file-input-drag-border-color, red) r g b / var(--v-file-input-drag-background-opacity))
-
     .v-input__details
       padding-inline: $file-input-details-padding-inline
       @at-root #{selector.append('.v-input--plain-underlined', &)}
