@@ -1,0 +1,7 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '../../styles/settings';
+@use '../../styles/tools';
+
+// Defaults
+$chip-font-weight: 400 !default;

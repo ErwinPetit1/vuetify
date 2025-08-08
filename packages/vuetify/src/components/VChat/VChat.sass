@@ -1,0 +1,39 @@
+@use '../../styles/tools'
+@use './variables' as *
+
+@include tools.layer('components')
+.v-chat
+    font-weight: $chip-font-weight
+    min-width: 0
+    overflow: hidden
+    position: relative
+
+.v-chat-wrapper
+    display: flex
+    flex-direction: column
+    gap: 6px
+
+.v-chat__message
+    max-width: 75%
+    width: fit-content
+
+    .v-chat__message_author
+        font-size: 12px
+        margin-bottom: 5px
+
+    &.v-chat__message--sent
+        margin-left: auto
+
+        .v-chat__message_author
+            text-align: right
+
+        .v-chat__message_content
+            background-color: #e3e3e3
+
+    &.v-chat__message--other
+        .v-chat__message_content
+            background-color: green
+
+    .v-chat__message_content
+        padding: 10px
+        border-radius: 10px
