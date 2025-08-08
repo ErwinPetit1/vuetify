@@ -43,3 +43,7 @@
       padding-inline: $file-input-details-padding-inline
       @at-root #{selector.append('.v-input--plain-underlined', &)}
         padding-inline: 0
+
+  .v-file-input--dragging 
+    outline: 1px dashed var(--v-file-input-drag-border-color, red)
+    background-color: rgba(from var(--v-file-input-drag-border-color, red) r g b / var(--v-file-input-drag-background-opacity))
